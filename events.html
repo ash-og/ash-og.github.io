@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Shannon Basso Gaule - Events</title>
+<meta name="description" content="A page for SBG comedy fans. Here you can buy show tickets, listen to his podcast, and watch past show clips">
+<meta name="author" content="Aisling Young">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+<script src="https://kit.fontawesome.com/ba3628f82d.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+	<div class="grid-container">
+		<header class="flexbox-left">
+
+      <!-- Logo  -->
+      <div id="logo">
+        <picture>
+          <source media="(min-width:500px)" srcset="images/logo/SBGLogo.png">
+          <source media="(min-width:0px)" srcset="images/logo/SBGLogoMobile.png">
+          <img src="images/logo/SBGLogo.png" alt="SBG Comedy Logo" style="width:auto;">
+        </picture>
+      </div>
+
+      <!-- Navigation Bar; Source: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp  -->
+      <nav class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="events.html" class="active">Events</a>
+        <a href="podcast.html">Podcast</a>
+        <a href="fiverr.html">Fiverr</a>
+        <a href="contact.html">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </nav>
+
+      <!-- Social Media icons; Source: https://fontawesome.com/icons/ -->
+      <div id="socials">
+        <a href="https://www.facebook.com/shannonimprint"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/sbgcomedy/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.youtube.com/channel/UCC0ahXlDt_oQ4EIx0HPxfEA"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+
+
+		</header>
+
+    <div class="hero">
+      <picture>
+        <source media="(min-width:650px)" srcset="images\backgrounds\TourDatesBG.png">
+        <source media="(min-width:0px)" srcset="images\backgrounds\TourDatesBG.png">
+        <img src="images\backgrounds\TourDatesBG.png" alt="Stage with a mic and red curtain" style="width:auto;">
+      </picture>
+
+    </div>
+
+
+		<main id="eventsMain">
+
+			<table id="events">
+
+				<tr>
+				  <th>Date</th>
+				  <th>City</th>
+				  <th>Venue</th>
+				  <th>Get Tickets</th>
+				</tr>
+
+				<tr>
+				  <td>18/05/2022<br>
+					  7:00PM</td>
+				  <td>Dublin</td>
+				  <td>Stag’s Head</td>
+					<td><a class="button" href="https://www.eventbrite.com/o/sbg-comedy-45274416893">
+									<b>BOOK</b>
+							</a>
+					</td>
+				</tr>
+
+				<tr>
+				  <td>21/05/2022<br>
+				 	 	8:00PM</td>
+				  <td>Dublin</td>
+				  <td>Black Sheep</td>
+					<td><a class="button" href="https://www.eventbrite.com/o/sbg-comedy-45274416893">
+									<b>BOOK</b>
+							</a>
+					</td>
+				</tr>
+
+				<tr>
+				  <td>23/05/2022<br>
+						6:30PM</td>
+					<td>Carlow</td>
+					<td>Tully’s</td>
+					<td><a class="button" href="https://www.eventbrite.com/o/sbg-comedy-45274416893">
+									<b>BOOK</b>
+							</a>
+					</td>
+				</tr>
+
+				<tr>
+					<td>25/05/2022<br>
+						7:30PM</td>
+					<td>Berlin</td>
+					<td>The Sunflower</td>
+					<td><a class="button" href="https://www.eventbrite.com/o/sbg-comedy-45274416893">
+									<b>BOOK</b>
+							</a>
+					</td>
+				</tr>
+
+				<tr>
+					<td>30/05/2022<br>
+						9:30PM</td>
+					<td>Berlin</td>
+					<td>Kilkenny Irish Pub</td>
+					<td><a class="button" href="https://www.eventbrite.com/o/sbg-comedy-45274416893">
+									<b>BOOK</b>
+							</a>
+					</td>
+				</tr>
+			</table>
+
+		</main>
+		<footer>
+			<h4 id="email">Let's Chat: <a href="mailto:sbgcomedy@gmail.com">sbgcomedy@gmail.com</a></h4>
+			<p>
+				<a href="events.html">Events</a> | <a href="fiverr.html">Fiverr</a> | <a href="contact.html">Contact</a>
+			</p>
+	    <h5>&copy; 2022 SBG Comedy</h5>
+
+		</footer>
+	</div>
+
+	<script>
+	function myFunction() {
+	  var x = document.getElementById("myTopnav");
+	  if (x.className === "topnav") {
+	    x.className += " responsive";
+	  } else {
+	    x.className = "topnav";
+	  }
+	}
+	</script>
+
+</body>
+</html>
