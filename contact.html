@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Shannon Basso Gaule - About</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shannon Basso Gaule - Contact</title>
 <meta name="description" content="A page for SBG comedy fans. Here you can buy show tickets, listen to his podcast, and watch past show clips">
 <meta name="author" content="Aisling Young">
 <link rel="stylesheet" href="css/styles.css">
@@ -27,12 +28,12 @@
 
       <!-- Navigation Bar; Source: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp  -->
       <nav class="topnav" id="myTopnav">
-        <a href="index.html" class="active">Home</a>
+        <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="events.html">Events</a>
         <a href="podcast.html">Podcast</a>
         <a href="fiverr.html">Fiverr</a>
-        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="active">Contact</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
         </a>
@@ -51,7 +52,6 @@
     <div class="hero">
 
       <!-- Hero Image Here -->
-      HERO
       <picture>
         <source media="(min-width:650px)" srcset="images\hero\HeroHomeDT.png">
         <source media="(min-width:320px)" srcset="images\hero\heromobile2.png">
@@ -61,11 +61,28 @@
     </div>
 
 
-		<main>
-			Main
-      <div id="contactform" class="yellow">
-        contact form Here
-      </div>
+		<main id="contactmain">
+      <form action="form.php" method="post" id="sbgcontactform" name="sbgcontactform" target="_blank">
+
+				<label for="firstname">First name:</label><br>
+				<input type="text" id="firstname" name="firstname" required><br>
+				<label for="surname">Last name:</label><br>
+				<input type="text" id="surname" name="surname" required><br>
+				<label for="email">Email:</label><br>
+				<input type="text" id="email" name="email" required><br>
+
+				<label for="querytype">Type:</label><br><br>
+				<input type="radio" id="querytype" name="querytype" value="show">Show Booking<br>
+				<input type="radio" id="querytype" name="querytype" value="podcast">Podcast Booking<br>
+				<input type="radio" id="querytype" name="querytype" value="general">General Email <br><br>
+				<label for="subject">Subject:</label><br>
+				<input type="text" id="subject" name="subject" required><br><br>
+				<label for="message">Message:</label><br>
+				<textarea name="message" id="message" rows="4" cols="40"></textarea><br>
+
+			</form>
+
+			<input name="SubmitBtn" id="SubmitBtn" type="submit" form="sbgcontactform" value="Submit" class="button"></input>
 
 
 		</main>
