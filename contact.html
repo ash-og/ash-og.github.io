@@ -53,9 +53,9 @@
 
       <!-- Hero Image Here -->
       <picture>
-        <source media="(min-width:650px)" srcset="images\hero\HeroHomeDT.png">
-        <source media="(min-width:320px)" srcset="images\hero\heromobile2.png">
-        <img src="images\hero\HeroHomeDT.png" alt="Shannon Basso Gaule" style="width:auto;">
+        <source media="(min-width:500px)" srcset="images/hero/HeroHomeDT.png">
+        <source media="(min-width:0px)" srcset="images/hero/heromobile2.png">
+        <img src="images/hero/HeroHomeDT.png" alt="Shannon Basso Gaule" style="width:auto;">
       </picture>
 
     </div>
@@ -68,13 +68,13 @@
 				<input type="text" id="firstname" name="firstname" required><br>
 				<label for="surname">Last name:</label><br>
 				<input type="text" id="surname" name="surname" required><br>
-				<label for="email">Email:</label><br>
-				<input type="text" id="email" name="email" required><br>
+				<label for="fromemail">Email:</label><br>
+				<input type="text" id="fromemail" name="fromemail" required><br>
 
-				<label for="querytype">Type:</label><br><br>
-				<input type="radio" id="querytype" name="querytype" value="show">Show Booking<br>
-				<input type="radio" id="querytype" name="querytype" value="podcast">Podcast Booking<br>
-				<input type="radio" id="querytype" name="querytype" value="general">General Email <br><br>
+				<h3>Type:</h3><br>
+				<input type="radio" id="showbooking" name="showbooking" value="show">Show Booking<br>
+				<input type="radio" id="podcastbooking" name="podcastbooking" value="podcast">Podcast Booking<br>
+				<input type="radio" id="generalmsg" name="generalmsg" value="general">General Email <br><br>
 				<label for="subject">Subject:</label><br>
 				<input type="text" id="subject" name="subject" required><br><br>
 				<label for="message">Message:</label><br>
@@ -82,7 +82,7 @@
 
 			</form>
 
-			<input name="SubmitBtn" id="SubmitBtn" type="submit" form="sbgcontactform" value="Submit" class="button"></input>
+			<input name="SubmitBtn" id="SubmitBtn" type="submit" form="sbgcontactform" value="Submit" class="button">
 
 
 		</main>

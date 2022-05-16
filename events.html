@@ -13,7 +13,7 @@
 </head>
 
 
-<body>
+<body id="eventsbody">
 	<div class="grid-container">
 		<header class="flexbox-left">
 
@@ -51,9 +51,9 @@
 
     <div class="hero">
       <picture>
-        <source media="(min-width:650px)" srcset="images\backgrounds\TourDatesBG.png">
-        <source media="(min-width:0px)" srcset="images\backgrounds\TourDatesBG.png">
-        <img src="images\backgrounds\TourDatesBG.png" alt="Stage with a mic and red curtain" style="width:auto;">
+        <source media="(min-width:650px)" srcset="images/backgrounds/TourDatesBG.png">
+        <source media="(min-width:0px)" srcset="images/backgrounds/TourDatesBG.png">
+        <img src="images/backgrounds/TourDatesBG.png" alt="Stage with a mic and red curtain" style="width:auto;">
       </picture>
 
     </div>
@@ -70,8 +70,8 @@
 				  <th>Get Tickets</th>
 				</tr>
 
-				<tr>
-				  <td>18/05/2022<br>
+				<tr id="event1">
+				  <td id="date1">15/05/2022<br>
 					  7:00PM</td>
 				  <td>Dublin</td>
 				  <td>Stag’s Head</td>
@@ -81,8 +81,8 @@
 					</td>
 				</tr>
 
-				<tr>
-				  <td>21/05/2022<br>
+				<tr id="event2">
+				  <td id="date2">21/05/2022<br>
 				 	 	8:00PM</td>
 				  <td>Dublin</td>
 				  <td>Black Sheep</td>
@@ -92,8 +92,8 @@
 					</td>
 				</tr>
 
-				<tr>
-				  <td>23/05/2022<br>
+				<tr id="event3">
+				  <td id="date3">23/06/2022<br>
 						6:30PM</td>
 					<td>Carlow</td>
 					<td>Tully’s</td>
@@ -103,8 +103,8 @@
 					</td>
 				</tr>
 
-				<tr>
-					<td>25/05/2022<br>
+				<tr id="event4">
+					<td id="date4">25/06/2022<br>
 						7:30PM</td>
 					<td>Berlin</td>
 					<td>The Sunflower</td>
@@ -114,8 +114,8 @@
 					</td>
 				</tr>
 
-				<tr>
-					<td>30/05/2022<br>
+				<tr id="event5">
+					<td id="date5">30/06/2022<br>
 						9:30PM</td>
 					<td>Berlin</td>
 					<td>Kilkenny Irish Pub</td>
@@ -146,6 +146,52 @@
 	    x.className = "topnav";
 	  }
 	}
+	</script>
+
+
+	<script>
+		var today = new Date()
+
+		var a1 = document.getElementById('date1').innerText
+		var date1 = a1.split("\n")[0].split("/")
+		var a2 = document.getElementById('date2').innerText
+		var date2 = a2.split("\n")[0].split("/")
+		var a3 = document.getElementById('date3').innerText
+		var date3 = a3.split("\n")[0].split("/")
+		var a4 = document.getElementById('date4').innerText
+		var date4 = a4.split("\n")[0].split("/")
+		var a5 = document.getElementById('date5').innerText
+		var date2 = a5.split("\n")[0].split("/")
+
+		var event1date = new Date(date1[2], date1[1]-1, date1[0])
+		var event2date = new Date(date2[2], date2[1]-1, date2[0])
+		var event3date = new Date(date3[2], date3[1]-1, date3[0])
+		var event4date = new Date(date4[2], date4[1]-1, date4[0])
+		var event5date = new Date(date5[2], date5[1]-1, date5[0])
+
+		if (event1date < today) {
+			document.getElementById('event1').style.display = "None"
+		}
+
+		if (event2date < today) {
+			document.getElementById('event2').style.display = "None"
+		}
+
+		if (event3date < today) {
+			document.getElementById('event3').style.display = "None"
+		}
+
+		if (event4date < today) {
+			document.getElementById('event4').style.display = "None"
+		}
+
+		if (event4date < today) {
+			document.getElementById('event4').style.display = "None"
+		}
+
+		if (event5date < today) {
+			document.getElementById('event5').style.display = "None"
+		}
 	</script>
 
 </body>
