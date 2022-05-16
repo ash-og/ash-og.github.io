@@ -98,6 +98,7 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-bottom: 5rem;
   }
 
 img{max-width: 100%; height: auto;}
@@ -107,9 +108,13 @@ img{max-width: 100%; height: auto;}
 .hero {
         background-color: black;
         position: relative;
+        overflow: auto;
       }
 
 footer{
+        bottom: 0;
+        width: 100%;
+        height: 5rem;
         background-color: black;
         color: white;
         font-size: 10px;
@@ -145,6 +150,8 @@ footer a:visited { color: purple;}
 .grid-container{
 	display: flex;
   flex-direction: column;
+  min-height: 100vh;
+  position: relative;
 }
 
 .flexbox-left{display: flex; justify-content: space-between; align-items: center;}
@@ -310,11 +317,16 @@ iframe:not(:first-of-type) {display: none;}
 
 /*-------- Events ------------------------------------------------------*/
 
+#eventsbody{
+          background-color: black;
+}
+
 #eventsMain {
           background-color: black;
           color: white;
           margin: 0px;
           overflow-x:auto;
+          position: relative;
 }
 
 #events {
@@ -469,7 +481,7 @@ label {
 /*-------- Global CSS ------------------------------------------------------*/
 	.grid-container{
 		display:grid;
-		grid-template-rows: 15% 25% 50% 10%;
+		grid-template-rows: 5% 30% 60% 5%;
 		grid-template-columns: 50% 50%;
 	}
 
@@ -499,6 +511,8 @@ label {
   .hero{
         grid-column: 1/span 2;
         grid-row: 2;
+        position: relative;
+        overflow: hidden;
       }
 
   main{
@@ -516,6 +530,7 @@ label {
           display: flex;
           align-items: center;
           flex-direction: column;
+          z-index: -1;
         }
 
   footer > * {
@@ -533,8 +548,6 @@ label {
     grid-template-rows: 20% 40% 40%;
     grid-row-gap: 0px;
  }
-
- .hero {position: relative;}
 
  #homeHeroHeading {
           left: 600px;
@@ -622,6 +635,11 @@ label {
 
   /* --------- About ------------------------------------------------------*/
 
+  .about-grid-container{
+    display:grid;
+    grid-template-rows: 5% 22% 68% 5%;
+    grid-template-columns: 50% 50%;
+  }
 
   .aboutgrid {
     display: grid;
@@ -655,6 +673,15 @@ label {
 
 
   /* --------- Events ------------------------------------------------------*/
+
+  #eventsbody .grid-container{
+              display:grid;
+              grid-template-rows: 5% 40% 50% 5%;
+              grid-template-columns: 50% 50%;
+  }
+
+  #eventsMain {margin: 20px 0px 0px 0px}
+
 
   #events {
           font-size: 30px;
@@ -721,7 +748,7 @@ label {
 
   #contactmain {
                 grid-column: 1/2; grid-row: 3;
-                padding: 40px;
+                padding: 30px;
   }
   #sbgcontactform {
                   font-size: 20px;
@@ -729,20 +756,20 @@ label {
   }
 
   input[type=text], input[type=email], textarea {
-                    padding: 12px;
-                    margin: 18px;
+                    padding: 10px;
+                    margin: 15px;
   }
 
-  input[type=radio] {padding: 8px; margin: 12px;}
+  input[type=radio] {padding: 5px; margin: 10px;}
 
 
   label, legend {
-              font-size: 25px;
-              margin: 20px;
+              font-size: 20px;
+              margin: 10px;
   }
 
   fieldset {
-          margin: 25px 0px 25px 0px;
+          margin: 15px 0px 15px 0px;
   }
 
 
